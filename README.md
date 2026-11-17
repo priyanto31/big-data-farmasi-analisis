@@ -33,5 +33,6 @@ cd big-data-farmasi-analisis
 
 # 2. Instalasi pustaka pendukung (Pandas, PySpark, Matplotlib, Seaborn)
 pip install pyspark pandas matplotlib seaborn
+```
 
 ## 📁 Struktur Repositori
