@@ -51,7 +51,7 @@ big-data-farmasi-analisis/
     ├── 03_grafik_tren_musiman.png         # KPI: Gelombang Musim Hujan
     └── 04_grafik_distribusi_layanan.png   # KPI: Proporsi Klinis (IGD, Rawat Inap)
 
-    ---```
+    ```
 
 ## 📊 Ringkasan Hasil & Insight Bisnis
 
