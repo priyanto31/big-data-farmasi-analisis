@@ -50,6 +50,8 @@ big-data-farmasi-analisis/
     ├── 02_grafik_risiko_kedaluwarsa.png   # KPI: Risiko Penalti Logistik Laut
     ├── 03_grafik_tren_musiman.png         # KPI: Gelombang Musim Hujan
     └── 04_grafik_distribusi_layanan.png   # KPI: Proporsi Klinis (IGD, Rawat Inap)
+
+    
     📊 Ringkasan Hasil & Insight Bisnis
 Dari analisis 100.000 data transaksi rantai pasok farmasi, ditemukan 4 wawasan strategis:
 
