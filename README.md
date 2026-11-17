@@ -51,8 +51,8 @@ big-data-farmasi-analisis/
     ├── 03_grafik_tren_musiman.png         # KPI: Gelombang Musim Hujan
     └── 04_grafik_distribusi_layanan.png   # KPI: Proporsi Klinis (IGD, Rawat Inap)
 
-    
-    📊 Ringkasan Hasil & Insight Bisnis
+
+📊 Ringkasan Hasil & Insight Bisnis
 Dari analisis 100.000 data transaksi rantai pasok farmasi, ditemukan 4 wawasan strategis:
 
 Dominasi Pendapatan (Efek Pareto): Kategori Antibiotik dan Obat Saluran Cerna di Jakarta (Pusat) adalah tulang punggung perusahaan. Rekomendasi: Terapkan kebijakan Tiered Inventory (mengamankan 70% anggaran pengadaan untuk Safety Stock kategori ini di Jakarta).
