@@ -36,7 +36,7 @@ pip install pyspark pandas matplotlib seaborn
 ```
 
 ## 📁 Struktur Repositori
-
+```
 big-data-farmasi-analisis/
 ├── README.md                              # Dokumentasi Proyek
 ├── Dataset_Farmasi_Priyanto_15240017.csv  # Dataset Sintetis (100k baris)
@@ -49,4 +49,4 @@ big-data-farmasi-analisis/
     ├── 02_grafik_risiko_kedaluwarsa.png   # KPI: Risiko Penalti Logistik Laut
     ├── 03_grafik_tren_musiman.png         # KPI: Gelombang Musim Hujan
     └── 04_grafik_distribusi_layanan.png   # KPI: Proporsi Klinis (IGD, Rawat Inap)
-    
+   ``` 
