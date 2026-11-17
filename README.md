@@ -51,30 +51,38 @@ big-data-farmasi-analisis/
     ├── 03_grafik_tren_musiman.png         # KPI: Gelombang Musim Hujan
     └── 04_grafik_distribusi_layanan.png   # KPI: Proporsi Klinis (IGD, Rawat Inap)
 
+    ---
 
-📊 Ringkasan Hasil & Insight Bisnis
+## 📊 Ringkasan Hasil & Insight Bisnis
+
 Dari analisis 100.000 data transaksi rantai pasok farmasi, ditemukan 4 wawasan strategis:
 
-Dominasi Pendapatan (Efek Pareto): Kategori Antibiotik dan Obat Saluran Cerna di Jakarta (Pusat) adalah tulang punggung perusahaan. Rekomendasi: Terapkan kebijakan Tiered Inventory (mengamankan 70% anggaran pengadaan untuk Safety Stock kategori ini di Jakarta).
+* **Dominasi Pendapatan (Efek Pareto):** Kategori Antibiotik dan Obat Saluran Cerna di Jakarta (Pusat) adalah tulang punggung perusahaan. *Rekomendasi:* Terapkan kebijakan *Tiered Inventory* (mengamankan 70% anggaran pengadaan untuk *Safety Stock* kategori ini di Jakarta).
+* **Peringatan Logistik (Jayapura):** Tingkat obat berisiko tinggi (*expired* < 3 bulan) sangat ekstrem di Papua akibat *lead time* kargo laut yang mencapai 45 hari. *Rekomendasi:* Beralih ke *Air Freight* (Kargo Udara) khusus untuk obat sirup ke Indonesia Timur.
+* **Tren Musiman:** Perputaran stok membentuk lonjakan tajam di Q1 dan Q4 bertepatan dengan siklus musim hujan. *Rekomendasi:* Terapkan *Dynamic Replenishment* (genjot pasokan di Agustus-September, rem di pertengahan tahun).
+* **Profiling Konsumsi Klinis (OPD vs ER):** Rawat Jalan (OPD) menyerap 60% obat secara massal, sedangkan IGD (ER) menyerap porsi kecil namun butuh perputaran cepat. *Rekomendasi:* Bangun *Satellite Pharmacy* di zona IGD untuk memangkas *bottleneck* antrean perawat.
 
-Peringatan Logistik (Jayapura): Tingkat obat berisiko tinggi (expired < 3 bulan) sangat ekstrem di Papua akibat lead time kargo laut yang mencapai 45 hari. Rekomendasi: Beralih ke Air Freight (Kargo Udara) khusus untuk obat sirup ke Indonesia Timur.
+---
 
-Tren Musiman: Perputaran stok membentuk lonjakan tajam di Q1 dan Q4 bertepatan dengan siklus musim hujan. Rekomendasi: Terapkan Dynamic Replenishment (genjot pasokan di Agustus-September, rem di pertengahan tahun).
+## 🚀 Cara Menjalankan Aplikasi
 
-Profiling Konsumsi Klinis (OPD vs ER): Rawat Jalan (OPD) menyerap 60% obat secara massal, sedangkan IGD (ER) menyerap porsi kecil namun butuh perputaran cepat. Rekomendasi: Bangun Satellite Pharmacy di zona IGD untuk memangkas bottleneck antrean perawat.
+Jalankan *notebook* secara berurutan di VS Code atau Google Colab:
+1. Buka `01_exploration.ipynb` untuk melihat profil data awal.
+2. Buka `02_pyspark_transform.ipynb` untuk memproses *engine* PySpark (menghasilkan Parquet).
+3. Buka `03_etl_validation.ipynb` untuk mencetak 4 grafik Business Intelligence.
 
-🚀 Cara Menjalankan Aplikasi
-Jalankan notebook secara berurutan di VS Code atau Google Colab:
+---
 
-Buka 01_exploration.ipynb untuk melihat profil data awal.
+## 🔒 Kebijakan Keamanan & Tata Kelola Data
 
-Buka 02_pyspark_transform.ipynb untuk memproses engine PySpark (menghasilkan Parquet).
-
-Buka 03_etl_validation.ipynb untuk mencetak 4 grafik Business Intelligence.
-
-🔒 Kebijakan Keamanan & Tata Kelola Data
 Untuk menjaga standar kepatuhan medis dan performa repositori:
+* **Keamanan PII:** Seluruh dataset 100.000 baris yang disertakan adalah **100% data sintetis**. Tidak ada *Personally Identifiable Information* (PII) atau rekam medis pasien asli yang terekspos.
+* **Kompresi Big Data:** Format keluaran utama menggunakan **Apache Parquet** dengan kompresi Snappy untuk efisiensi penyimpanan arsitektur data.
 
-Keamanan PII: Seluruh dataset 100.000 baris yang disertakan adalah 100% data sintetis. Tidak ada Personally Identifiable Information (PII) atau rekam medis pasien asli yang terekspos.
+---
 
-Kompresi Big Data: Format keluaran utama menggunakan Apache Parquet dengan kompresi Snappy untuk efisiensi penyimpanan arsitektur data.
+## 👥 Tim Pengembang (Kelompok)
+
+Proyek Enterprise Big Data Analytics ini dikembangkan secara kolaboratif oleh:
+1. **Priyanto** (NIM: 15240017) - *Peran: Data Engineering, ETL Pipeline, dan Konfigurasi GitHub*
+2. **[Nama Teman Anda]** (NIM: [NIM Teman]) - *Peran: Business Analytics, Visualisasi, dan Data Profiling*
