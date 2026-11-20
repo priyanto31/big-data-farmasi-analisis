@@ -97,4 +97,4 @@ Untuk menjaga standar kepatuhan medis dan performa repositori:
 
 Proyek Enterprise Big Data Analytics ini dikembangkan secara kolaboratif oleh:
 1. **Priyanto** (NIM: 15240017) - *Peran: Data Engineering, ETL Pipeline, dan Konfigurasi GitHub*
-2. **[Nama Teman Anda]** (NIM: [NIM Teman]) - *Peran: Business Analytics, Visualisasi, dan Data Profiling*
+2. **Kevin** (NIM: 15240004) - *Peran: Business Analytics, Visualisasi, dan Data Profiling*
